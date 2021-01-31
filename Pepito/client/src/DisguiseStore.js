@@ -11,6 +11,7 @@ import PepitoDisguise from "./contracts_abi/PepitoDisguise.json";   // to call w
 class DisguiseStore extends React.Component{
     constructor() {
         super();
+        this.state = {};
     }
 
     storeDisguise = async () => {
@@ -32,11 +33,9 @@ class DisguiseStore extends React.Component{
              */
             const lastEvent = await pepitoInstance.getPastEvents('PepitoDisguiseCreated', {});
             const disguiseCount = lastEvent[0].returnValues.disguiseCount;
-            this.disguiseCount1 = lastEvent[0].returnValues.disguiseCount1;
             const disguiseAddresses = lastEvent[0].returnValues.disguiseAddresses;
-            const disguiseAddress = lastEvent[0].returnValues.disguiseAddresses[this.disguiseCount1-1];
+            const disguiseAddress = lastEvent[0].returnValues.disguiseAddresses[disguiseCount-1];
             console.log('...     2.storeDisguise.lastEvent, count =', disguiseCount,
-                ', count1 =', this.disguiseCount1, 
                 ', disguise addresses', disguiseAddresses);
 
             /** @dev    build the array of options of features of this disguise to store it
@@ -53,7 +52,7 @@ class DisguiseStore extends React.Component{
                 const disguise2store = pad2(idxTopType)+pad2(idxHatColor)+pad2(idxAccessoriesType) etc. */
 
             /** @dev    return to App.js the count of disguises, their addresses & the disguise's options */
-            this.props.deployedDisguise(this.disguiseCount1, disguiseAddresses, disguise2store);
+            this.props.deployedDisguise(disguiseCount, disguiseAddresses, disguise2store);
 
             /** create with web3 a connection to the last pepitoDisguise; */
             const pepitoDisguise = new this.props.web3.eth.Contract(
@@ -64,7 +63,7 @@ class DisguiseStore extends React.Component{
             const storeDisguiseReceipt = await pepitoDisguise.methods.storeDisguise(disguise2store)
                 .send({from: this.props.ownerPepito });
             //console.log("stored Disguise", storeDisguiseReceipt, disguise2store);
-            
+            this.setState({disguiseCount: disguiseCount});  // to update the render function
       
         } else alert("Please get first the blockchain interface & Pepito credentials");  
     }
@@ -76,7 +75,7 @@ class DisguiseStore extends React.Component{
                 <button className="btn btn-lg btn-secondary mb-5" 
                     onClick={this.storeDisguise}>Store disguise on blockchain
                 </button>
-                <span>, currently... {this.disguiseCount1}</span>
+                <span>, currently... {this.state.disguiseCount}</span>
             </>
         )
     }
