@@ -893,7 +893,11 @@
     }
   },
   "schemaVersion": "3.2.5",
+<<<<<<< HEAD
   "updatedAt": "2021-01-31T21:33:12.521Z",
+=======
+  "updatedAt": "2021-01-31T21:38:42.560Z",
+>>>>>>> br001
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
