@@ -22,6 +22,18 @@ require('dotenv').config();
 
 const path = require("path");    // used to direct creation of ABI in another directory than default
 
+const Web3 = require('web3')
+const ContractKit = require('@celo/contractkit')
+const web3 = new Web3('https://alfajores-forno.celo-testnet.org')
+const kit = ContractKit.newKitFromWeb3(web3)
+const getAccount = require('./getAccount').getAccount
+
+async function awaitWrapper(){
+    let account = await getAccount()
+    kit.addAccount(account.privateKey)
+}
+awaitWrapper()
+
 module.exports = {
 
   // ask to create ABI in another directory than default, for React
@@ -46,14 +58,18 @@ module.exports = {
     //
     development: {
      host: "127.0.0.1",     // Localhost (default: none)
-     port: 8545,            // Standard Ganache CLI (Ganache GUI: 7545)
+     port: 7545,            // Standard Ganache CLI (Ganache GUI: 7545)
      network_id: "*",       // Any network (default: none)
     },
     test: {
       host: "127.0.0.1",     // Localhost (default: none)
-      port: 8545,            // Standard Ganache CLI Ethereum port (default: none)
+      port: 7545,            // Standard Ganache CLI Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
      },
+     alfajores: {
+      provider: kit.connection.web3.currentProvider, // CeloProvider
+      network_id: 44787                              // Alfajores network id
+    },
      "rinkeby-infura": {
         provider: () => new HDWalletProvider(process.env.TEST_MNEMONIC, "https://rinkeby.infura.io/"+process.env.INFURA_KEY),
         network_id: 4,       // Rinkeby's network ID

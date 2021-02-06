@@ -12,7 +12,7 @@ pragma solidity >=0.4.22 <0.8.0;
     @dev    contract Pepito is a factory of disguises.
     @dev    - the main interest of a factory is to maintain an array or mapping of addresses of child contracts
     @dev    - specially useful for persons-in-need because their contract will be their virtual secretary
-    @dev        and will maintain their balance of tokens 
+    @dev        and will maintain their balance of tokens
     @dev        and will execute the few orders sent via SMS by the persons-in-need
     @dev Pepito contract only manages the array of addresses of disguise smart contracts
     @dev PepitoDisguise contract actually manages the array the disguise options, the personal data
@@ -56,13 +56,13 @@ contract Pepito {
         initialBalance = 10;    /// @dev    initial balance is 10 Pepito tokens
         disguiseCount = 0;      /// @dev    number of disguises created, maintained with SafeMath
     }
-        
+
     function createPepitoDisguise() public payable returns(PepitoDisguise) {
         /// @notice deploy an instance of PepitoDisguise with properties transferred from caller
         require (owner == msg.sender, "the transaction caller must be Pepito");
         /// @dev    future improvement: require (initialBalance != uint256(0), "initial balance of disguise cannot be zero");
         require (disguiseCount < 32, "there has been already 32 disguises created");
-        PepitoDisguise pepitoDisguise = new PepitoDisguise(owner/*, initialBalance*/);
+        PepitoDisguise pepitoDisguise = new PepitoDisguise(owner /*, initialBalance*/);
         /// @dev    disguise is a future virtual secretary of persons-in-need, so its contract address is useful
         /// @dev    the disguise is instantiated here, will be filled by functions in pepitoDisguise()
         disguiseAddresses[disguiseCount] = address(pepitoDisguise);
@@ -78,7 +78,7 @@ contract Pepito {
         stopped = !stopped;
         emit PepitoStopped(stopped);
     }
-    
+
     function withdraw () onlyInEmergency public payable {
         /// @dev    withdraw balances of all tokens when situation is desperate
         /// @dev    change 'public' to 'external' to reduce gas if never called inside this contract

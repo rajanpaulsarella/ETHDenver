@@ -20,16 +20,16 @@ contract PepitoDisguise {
     address pepitoDisguiseOwner;        /// @dev    the owner of the disguise is Pepito
     uint256 public tokenBalance;        /// @dev    running balance of pepitoTokens of this disguise
     uint256[12] public disguiseInStore;    /// @dev    the disguise, fixed array of 12 feature indexes
-   
+
     event DisguiseStored(address disguiseAddress, uint256[12] disguise);
     event DisguiseRead(address disguiseAddress, uint256[12] disguise);
 
-    constructor(address _pepitoDisguiseOwner/*, uint _initialTokenBalance*/) public {
-        pepitoDisguiseOwner = _pepitoDisguiseOwner;
+    constructor(address _pepitoDisguiseOwner /*, uint _initialTokenBalance*/) public {
+         pepitoDisguiseOwner = _pepitoDisguiseOwner;
         // tokenBalance = _initialTokenBalance; // placeholder
         tokenBalance = 0;
     }
-    
+
     function storeDisguise(uint256[12] memory _disguise2store) public payable {
         /// @dev    write the struct storedData in blockchain first, IPFS database in future
         disguiseInStore = _disguise2store;
@@ -48,7 +48,7 @@ contract PepitoDisguise {
         /// @dev    read, update, write back the struct storedData in IPFS database
         /// @dev    TODO: to be filled
     }
-    
+
     /// @dev    functions to modify individual elements of the disguise
     // function setTopType(TopTypes x) public {    /// @dev    test function, set one character feature in the struct
     //     storedDisguise.topType = x;             /// @dev    to be replaced by adequate when finalised

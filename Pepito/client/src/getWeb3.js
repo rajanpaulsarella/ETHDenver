@@ -1,7 +1,7 @@
 /**
  * @author ConsenSys TruffleBox
  * @notice function getWeb3, copied from TruffleBox "react"
- * @dev without the window.eventListener "load" 
+ * @dev without the window.eventListener "load"
  *      that was necessary in Trufflebox because getWeb3 was called in componentDidMount
  */
 import Web3 from "web3";
@@ -13,7 +13,7 @@ const getWeb3 = () =>
             // then redefine web3 using window.ethereum
             const web3 = new Web3(window.ethereum);
             try {
-                // Request the user for authorization to access account  
+                // Request the user for authorization to access account
                 /*await*/ window.ethereum.enable();
                 // Acccounts now exposed
                 resolve(web3);
@@ -33,7 +33,7 @@ const getWeb3 = () =>
         else {
             // we don't use Metamask at all
             const provider = new Web3.providers.HttpProvider(
-                "http://127.0.0.1:8545"
+                "http://127.0.0.1:7546"
             );
             const web3 = new Web3(provider);
             console.log("No web3 instance injected, using Local web3.");
