@@ -121,12 +121,12 @@
       "payable": true
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_pepitoDisguiseOwner\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"disguiseAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256[12]\",\"name\":\"disguise\",\"type\":\"uint256[12]\"}],\"name\":\"DisguiseRead\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"disguiseAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256[12]\",\"name\":\"disguise\",\"type\":\"uint256[12]\"}],\"name\":\"DisguiseStored\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"disguiseInStore\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"readDisguise\",\"outputs\":[{\"internalType\":\"uint256[12]\",\"name\":\"\",\"type\":\"uint256[12]\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256[12]\",\"name\":\"_disguise2store\",\"type\":\"uint256[12]\"}],\"name\":\"storeDisguise\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"tokenBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"updateDisguise\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Vu Tien Khang\",\"details\":\"PepitoDisguise's function is similar to ENS Resolver.sol, Pepito to ENS Registry.solRemix-compiled successfully 2021-01-26\",\"methods\":{},\"title\":\"PepitoDisguise. Demo dApp for Machu Picchu. Also Final Project of...\"},\"userdoc\":{\"methods\":{},\"notice\":\"Solidity NatSpec formatPepito is a Caribbian corsair. He can create PepitoDisguise in this demoA disguise is composed of many features, each feature has many optionsCurrently, features and options are hard-coded in a array to optise blockchain storage... once moved to IPFS, features and options will be key-value pairs, open-endedCopy this contract to generate also farmers, refugees, homeless persons etc.A disguise is a farmer, with a wallet of tokens populated by anybody who reads the description of the disguise\"}},\"settings\":{\"compilationTarget\":{\"/Users/rajanpaulsarella/Documents/workspace/practice/ETHDenver/Machu-Picchu/Pepito/contracts/PepitoDisguise.sol\":\"PepitoDisguise\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/rajanpaulsarella/Documents/workspace/practice/ETHDenver/Machu-Picchu/Pepito/contracts/PepitoDisguise.sol\":{\"keccak256\":\"0x3c7445f9201643295fb3d1216c71e12eee82a46e49912fc6d7ff162f624a0276\",\"urls\":[\"bzz-raw://95aa4066ce7ee0c98f58a422654804bade1460fb9ec63bb3f787475fc8fa0c0e\",\"dweb:/ipfs/QmehvvAU61qWFuDLrrhKoNF9EJt6zbmXtpxpXaKD2BKoWh\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506040516104823803806104828339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000600181905550506103e68061009c6000396000f3fe60806040526004361061004a5760003560e01c80636a688d171461004f578063839226171461009e57806396b9d572146101055780639e1a4d191461010f578063a7b232551461013a575b600080fd5b34801561005b57600080fd5b506100886004803603602081101561007257600080fd5b8101908080359060200190929190505050610180565b6040518082815260200191505060405180910390f35b61010360048036036101808110156100b557600080fd5b81019080806101800190600c806020026040519081016040528092919082600c60200280828437600081840152601f19601f8201169050808301925050505050509192919290505050610198565b005b61010d610239565b005b34801561011b57600080fd5b5061012461023b565b6040518082815260200191505060405180910390f35b610142610241565b6040518082600c60200280838360005b8381101561016d578082015181840152602081019050610152565b5050505090500191505060405180910390f35b600281600c811061018d57fe5b016000915090505481565b80600290600c6101a9929190610328565b507f504b87d066706ec2b4783bbd17c499c1dee069b91237189ac5319b5b1abbd3d9306002604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182600c8015610228576020028201915b815481526020019060010190808311610214575b50509250505060405180910390a150565b565b60015481565b610249610368565b7fe9ba7b1b0b27c6ab2b810a6374133382246908ff3a8732905a29993c7f2c95ab306002604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182600c80156102c7576020028201915b8154815260200190600101908083116102b3575b50509250505060405180910390a1600180600082825401925050819055506002600c806020026040519081016040528092919082600c801561031e576020028201915b81548152602001906001019080831161030a575b5050505050905090565b82600c8101928215610357579160200282015b8281111561035657825182559160200191906001019061033b565b5b509050610364919061038b565b5090565b604051806101800160405280600c90602082028038833980820191505090505090565b6103ad91905b808211156103a9576000816000905550600101610391565b5090565b9056fea26469706673582212208c6a0d421e39b5ecdaf825cbff94df84af794e7fae92932fd05e6f006a50599164736f6c63430006000033",
-  "deployedBytecode": "0x60806040526004361061004a5760003560e01c80636a688d171461004f578063839226171461009e57806396b9d572146101055780639e1a4d191461010f578063a7b232551461013a575b600080fd5b34801561005b57600080fd5b506100886004803603602081101561007257600080fd5b8101908080359060200190929190505050610180565b6040518082815260200191505060405180910390f35b61010360048036036101808110156100b557600080fd5b81019080806101800190600c806020026040519081016040528092919082600c60200280828437600081840152601f19601f8201169050808301925050505050509192919290505050610198565b005b61010d610239565b005b34801561011b57600080fd5b5061012461023b565b6040518082815260200191505060405180910390f35b610142610241565b6040518082600c60200280838360005b8381101561016d578082015181840152602081019050610152565b5050505090500191505060405180910390f35b600281600c811061018d57fe5b016000915090505481565b80600290600c6101a9929190610328565b507f504b87d066706ec2b4783bbd17c499c1dee069b91237189ac5319b5b1abbd3d9306002604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182600c8015610228576020028201915b815481526020019060010190808311610214575b50509250505060405180910390a150565b565b60015481565b610249610368565b7fe9ba7b1b0b27c6ab2b810a6374133382246908ff3a8732905a29993c7f2c95ab306002604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182600c80156102c7576020028201915b8154815260200190600101908083116102b3575b50509250505060405180910390a1600180600082825401925050819055506002600c806020026040519081016040528092919082600c801561031e576020028201915b81548152602001906001019080831161030a575b5050505050905090565b82600c8101928215610357579160200282015b8281111561035657825182559160200191906001019061033b565b5b509050610364919061038b565b5090565b604051806101800160405280600c90602082028038833980820191505090505090565b6103ad91905b808211156103a9576000816000905550600101610391565b5090565b9056fea26469706673582212208c6a0d421e39b5ecdaf825cbff94df84af794e7fae92932fd05e6f006a50599164736f6c63430006000033",
-  "sourceMap": "930:2842:2:-:0;;;1421:230;8:9:-1;5:2;;;30:1;27;20:12;5:2;1421:230:2;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1421:230:2;;;;;;;;;;;;;;;;1535:20;1513:19;;:42;;;;;;;;;;;;;;;;;;1643:1;1628:12;:16;;;;1421:230;930:2842;;;;;;",
-  "deployedSourceMap": "930:2842:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1172:34;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1172:34:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1172:34:2;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1657:278;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;1657:278:2;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;1657:278:2;;;;;;;;;;;;;;:::i;:::-;;2421:171;;;:::i;:::-;;1071:27;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1071:27:2;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1941:474;;;:::i;:::-;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1941:474:2;;;;;;;;;;;;;;;;1172:34;;;;;;;;;;;;;;;;;;:::o;1657:278::-;1852:15;1834;:33;;;;;;;:::i;:::-;;1882:46;1905:4;1912:15;1882:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1657:278;:::o;2421:171::-;:::o;1071:27::-;;;;:::o;1941:474::-;1988:18;;:::i;:::-;2222:44;2243:4;2250:15;2222:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2292:1;2276:12;;:17;;;;;;;;;;;2393:15;2386:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1941:474;:::o;930:2842::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;29:2:-1;21:6;17:15;117:4;105:10;97:6;88:34;148:4;140:6;136:17;126:27;;0:157;930:2842:2;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.8.0;\n\n/** Solidity NatSpec format\n    @title  PepitoDisguise. Demo dApp for Machu Picchu. Also Final Project of...\n    @author Vu Tien Khang\n    @notice Pepito is a Caribbian corsair. He can create PepitoDisguise in this demo\n    @notice A disguise is composed of many features, each feature has many options\n    @notice Currently, features and options are hard-coded in a array to optise blockchain storage\n    @notice     ... once moved to IPFS, features and options will be key-value pairs, open-ended\n    @notice Copy this contract to generate also farmers, refugees, homeless persons etc.\n    @notice A disguise is a farmer, with a wallet of tokens populated by anybody who reads the description of the disguise\n    @dev    PepitoDisguise's function is similar to ENS Resolver.sol, Pepito to ENS Registry.sol\n\n    @dev    Remix-compiled successfully 2021-01-26\n*/\n\ncontract PepitoDisguise {\n    // state variables\n    address pepitoDisguiseOwner;        /// @dev    the owner of the disguise is Pepito\n    uint256 public tokenBalance;        /// @dev    running balance of pepitoTokens of this disguise\n    uint256[12] public disguiseInStore;    /// @dev    the disguise, fixed array of 12 feature indexes\n\n    event DisguiseStored(address disguiseAddress, uint256[12] disguise);\n    event DisguiseRead(address disguiseAddress, uint256[12] disguise);\n\n    constructor(address _pepitoDisguiseOwner /*, uint _initialTokenBalance*/) public {\n         pepitoDisguiseOwner = _pepitoDisguiseOwner;\n        // tokenBalance = _initialTokenBalance; // placeholder\n        tokenBalance = 0;\n    }\n\n    function storeDisguise(uint256[12] memory _disguise2store) public payable {\n        /// @dev    write the struct storedData in blockchain first, IPFS database in future\n        disguiseInStore = _disguise2store;\n        emit DisguiseStored(address(this), disguiseInStore);\n    }\n\n    function readDisguise() public payable returns(uint256[12] memory) {\n        /// @dev    in the future, retrieves the global variable disguiseInStore from IPFS database\n        /// @dev    payable so that in the future, a peson can be paid to provide personal details\n        emit DisguiseRead(address(this), disguiseInStore);\n        tokenBalance += 1;           // placeholder: everytime a disguise discloses its data, it will be paid\n        return disguiseInStore;\n    }\n\n    function updateDisguise() public payable {\n        /// @dev    read, update, write back the struct storedData in IPFS database\n        /// @dev    TODO: to be filled\n    }\n\n    /// @dev    functions to modify individual elements of the disguise\n    // function setTopType(TopTypes x) public {    /// @dev    test function, set one character feature in the struct\n    //     storedDisguise.topType = x;             /// @dev    to be replaced by adequate when finalised\n    // }\n    // function setHatColor(HatColors x) public { storedDisguise.hatColor = x; }\n    // function setAccessoriesType(AccessoriesTypes x) public { storedDisguise.accessoriesType = x; }\n    // function setHairColor(HairColors x) public { storedDisguise.hairColor = x; }\n    // function setFacialHairType(FacialHairTypes x) public {storedDisguise.facialHairType = x; }\n    // function setClotheType(ClotheTypes x) public {storedDisguise.clotheType = x; }\n    // function setClotheColor(ClotheColors x) public {storedDisguise.clotheColor = x; }\n    // function setEyeType(EyeTypes x) public {storedDisguise.eyeType = x; }\n    // function setEyebrowType(EyebrowTypes x) public {storedDisguise.eyebrowType = x; }\n    // function setMouthType(MouthTypes x) public {storedDisguise.mouthType = x; }\n    // function setSkinColor(SkinColors x) public {storedDisguise.skinColor = x; }\n\n}\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_pepitoDisguiseOwner\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"disguiseAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256[12]\",\"name\":\"disguise\",\"type\":\"uint256[12]\"}],\"name\":\"DisguiseRead\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"disguiseAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256[12]\",\"name\":\"disguise\",\"type\":\"uint256[12]\"}],\"name\":\"DisguiseStored\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"disguiseInStore\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"readDisguise\",\"outputs\":[{\"internalType\":\"uint256[12]\",\"name\":\"\",\"type\":\"uint256[12]\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256[12]\",\"name\":\"_disguise2store\",\"type\":\"uint256[12]\"}],\"name\":\"storeDisguise\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"tokenBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"updateDisguise\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Vu Tien Khang\",\"details\":\"PepitoDisguise's function is similar to ENS Resolver.sol, Pepito to ENS Registry.solRemix-compiled successfully 2021-01-26\",\"methods\":{},\"title\":\"PepitoDisguise. Demo dApp for Machu Picchu. Also Final Project of...\"},\"userdoc\":{\"methods\":{},\"notice\":\"Solidity NatSpec formatPepito is a Caribbian corsair. He can create PepitoDisguise in this demoA disguise is composed of many features, each feature has many optionsCurrently, features and options are hard-coded in a array to optise blockchain storage... once moved to IPFS, features and options will be key-value pairs, open-endedCopy this contract to generate also farmers, refugees, homeless persons etc.A disguise is a farmer, with a wallet of tokens populated by anybody who reads the description of the disguise\"}},\"settings\":{\"compilationTarget\":{\"/Users/rajanpaulsarella/Documents/workspace/practice/ETHDenver/Machu-Picchu/Pepito/contracts/PepitoDisguise.sol\":\"PepitoDisguise\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/rajanpaulsarella/Documents/workspace/practice/ETHDenver/Machu-Picchu/Pepito/contracts/PepitoDisguise.sol\":{\"keccak256\":\"0x5d56373a6e5081c466ce23f377ec30130b0aa430b1531dd642ef5a0c0cf684cb\",\"urls\":[\"bzz-raw://7c272d76b3153a54b148d90cc8a57b6e6a9595190fbb23e7ed9d435909bc90fa\",\"dweb:/ipfs/QmPHds2bFgXXFVFGBB4pztSEr26RreqsQW3wz2S5EKTUpZ\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516104823803806104828339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000600181905550506103e68061009c6000396000f3fe60806040526004361061004a5760003560e01c80636a688d171461004f578063839226171461009e57806396b9d572146101055780639e1a4d191461010f578063a7b232551461013a575b600080fd5b34801561005b57600080fd5b506100886004803603602081101561007257600080fd5b8101908080359060200190929190505050610180565b6040518082815260200191505060405180910390f35b61010360048036036101808110156100b557600080fd5b81019080806101800190600c806020026040519081016040528092919082600c60200280828437600081840152601f19601f8201169050808301925050505050509192919290505050610198565b005b61010d610239565b005b34801561011b57600080fd5b5061012461023b565b6040518082815260200191505060405180910390f35b610142610241565b6040518082600c60200280838360005b8381101561016d578082015181840152602081019050610152565b5050505090500191505060405180910390f35b600281600c811061018d57fe5b016000915090505481565b80600290600c6101a9929190610328565b507f504b87d066706ec2b4783bbd17c499c1dee069b91237189ac5319b5b1abbd3d9306002604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182600c8015610228576020028201915b815481526020019060010190808311610214575b50509250505060405180910390a150565b565b60015481565b610249610368565b7fe9ba7b1b0b27c6ab2b810a6374133382246908ff3a8732905a29993c7f2c95ab306002604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182600c80156102c7576020028201915b8154815260200190600101908083116102b3575b50509250505060405180910390a1600180600082825401925050819055506002600c806020026040519081016040528092919082600c801561031e576020028201915b81548152602001906001019080831161030a575b5050505050905090565b82600c8101928215610357579160200282015b8281111561035657825182559160200191906001019061033b565b5b509050610364919061038b565b5090565b604051806101800160405280600c90602082028038833980820191505090505090565b6103ad91905b808211156103a9576000816000905550600101610391565b5090565b9056fea2646970667358221220a1d262e706f66d584a8c4616e0e1dbf4649f686be13e3460d5ec91896484806f64736f6c63430006000033",
+  "deployedBytecode": "0x60806040526004361061004a5760003560e01c80636a688d171461004f578063839226171461009e57806396b9d572146101055780639e1a4d191461010f578063a7b232551461013a575b600080fd5b34801561005b57600080fd5b506100886004803603602081101561007257600080fd5b8101908080359060200190929190505050610180565b6040518082815260200191505060405180910390f35b61010360048036036101808110156100b557600080fd5b81019080806101800190600c806020026040519081016040528092919082600c60200280828437600081840152601f19601f8201169050808301925050505050509192919290505050610198565b005b61010d610239565b005b34801561011b57600080fd5b5061012461023b565b6040518082815260200191505060405180910390f35b610142610241565b6040518082600c60200280838360005b8381101561016d578082015181840152602081019050610152565b5050505090500191505060405180910390f35b600281600c811061018d57fe5b016000915090505481565b80600290600c6101a9929190610328565b507f504b87d066706ec2b4783bbd17c499c1dee069b91237189ac5319b5b1abbd3d9306002604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182600c8015610228576020028201915b815481526020019060010190808311610214575b50509250505060405180910390a150565b565b60015481565b610249610368565b7fe9ba7b1b0b27c6ab2b810a6374133382246908ff3a8732905a29993c7f2c95ab306002604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182600c80156102c7576020028201915b8154815260200190600101908083116102b3575b50509250505060405180910390a1600180600082825401925050819055506002600c806020026040519081016040528092919082600c801561031e576020028201915b81548152602001906001019080831161030a575b5050505050905090565b82600c8101928215610357579160200282015b8281111561035657825182559160200191906001019061033b565b5b509050610364919061038b565b5090565b604051806101800160405280600c90602082028038833980820191505090505090565b6103ad91905b808211156103a9576000816000905550600101610391565b5090565b9056fea2646970667358221220a1d262e706f66d584a8c4616e0e1dbf4649f686be13e3460d5ec91896484806f64736f6c63430006000033",
+  "sourceMap": "930:2843:2:-:0;;;1421:230;8:9:-1;5:2;;;30:1;27;20:12;5:2;1421:230:2;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1421:230:2;;;;;;;;;;;;;;;;1535:20;1513:19;;:42;;;;;;;;;;;;;;;;;;1643:1;1628:12;:16;;;;1421:230;930:2843;;;;;;",
+  "deployedSourceMap": "930:2843:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1172:34;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1172:34:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1172:34:2;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1657:278;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;1657:278:2;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;1657:278:2;;;;;;;;;;;;;;:::i;:::-;;2422:171;;;:::i;:::-;;1071:27;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1071:27:2;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1941:475;;;:::i;:::-;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1941:475:2;;;;;;;;;;;;;;;;1172:34;;;;;;;;;;;;;;;;;;:::o;1657:278::-;1852:15;1834;:33;;;;;;;:::i;:::-;;1882:46;1905:4;1912:15;1882:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1657:278;:::o;2422:171::-;:::o;1071:27::-;;;;:::o;1941:475::-;1988:18;;:::i;:::-;2223:44;2244:4;2251:15;2223:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2293:1;2277:12;;:17;;;;;;;;;;;2394:15;2387:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1941:475;:::o;930:2843::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;29:2:-1;21:6;17:15;117:4;105:10;97:6;88:34;148:4;140:6;136:17;126:27;;0:157;930:2843:2;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.8.0;\n\n/** Solidity NatSpec format\n    @title  PepitoDisguise. Demo dApp for Machu Picchu. Also Final Project of...\n    @author Vu Tien Khang\n    @notice Pepito is a Caribbian corsair. He can create PepitoDisguise in this demo\n    @notice A disguise is composed of many features, each feature has many options\n    @notice Currently, features and options are hard-coded in a array to optise blockchain storage\n    @notice     ... once moved to IPFS, features and options will be key-value pairs, open-ended\n    @notice Copy this contract to generate also farmers, refugees, homeless persons etc.\n    @notice A disguise is a farmer, with a wallet of tokens populated by anybody who reads the description of the disguise\n    @dev    PepitoDisguise's function is similar to ENS Resolver.sol, Pepito to ENS Registry.sol\n\n    @dev    Remix-compiled successfully 2021-01-26\n*/\n\ncontract PepitoDisguise {\n    // state variables\n    address pepitoDisguiseOwner;        /// @dev    the owner of the disguise is Pepito\n    uint256 public tokenBalance;        /// @dev    running balance of pepitoTokens of this disguise\n    uint256[12] public disguiseInStore;    /// @dev    the disguise, fixed array of 12 feature indexes\n\n    event DisguiseStored(address disguiseAddress, uint256[12] disguise);\n    event DisguiseRead(address disguiseAddress, uint256[12] disguise);\n\n    constructor(address _pepitoDisguiseOwner /*, uint _initialTokenBalance*/) public {\n         pepitoDisguiseOwner = _pepitoDisguiseOwner;\n        // tokenBalance = _initialTokenBalance; // placeholder\n        tokenBalance = 0;\n    }\n\n    function storeDisguise(uint256[12] memory _disguise2store) public payable {\n        /// @dev    write the struct storedData in blockchain first, IPFS database in future\n        disguiseInStore = _disguise2store;\n        emit DisguiseStored(address(this), disguiseInStore);\n    }\n\n    function readDisguise() public payable returns(uint256[12] memory) {\n        /// @dev    in the future, retrieves the global variable disguiseInStore from IPFS database\n        /// @dev    payable so that in the future, a person can be paid to provide personal details\n        emit DisguiseRead(address(this), disguiseInStore);\n        tokenBalance += 1;           // placeholder: everytime a disguise discloses its data, it will be paid\n        return disguiseInStore;\n    }\n\n    function updateDisguise() public payable {\n        /// @dev    read, update, write back the struct storedData in IPFS database\n        /// @dev    TODO: to be filled\n    }\n\n    /// @dev    functions to modify individual elements of the disguise\n    // function setTopType(TopTypes x) public {    /// @dev    test function, set one character feature in the struct\n    //     storedDisguise.topType = x;             /// @dev    to be replaced by adequate when finalised\n    // }\n    // function setHatColor(HatColors x) public { storedDisguise.hatColor = x; }\n    // function setAccessoriesType(AccessoriesTypes x) public { storedDisguise.accessoriesType = x; }\n    // function setHairColor(HairColors x) public { storedDisguise.hairColor = x; }\n    // function setFacialHairType(FacialHairTypes x) public {storedDisguise.facialHairType = x; }\n    // function setClotheType(ClotheTypes x) public {storedDisguise.clotheType = x; }\n    // function setClotheColor(ClotheColors x) public {storedDisguise.clotheColor = x; }\n    // function setEyeType(EyeTypes x) public {storedDisguise.eyeType = x; }\n    // function setEyebrowType(EyebrowTypes x) public {storedDisguise.eyebrowType = x; }\n    // function setMouthType(MouthTypes x) public {storedDisguise.mouthType = x; }\n    // function setSkinColor(SkinColors x) public {storedDisguise.skinColor = x; }\n\n}\n",
   "sourcePath": "/Users/rajanpaulsarella/Documents/workspace/practice/ETHDenver/Machu-Picchu/Pepito/contracts/PepitoDisguise.sol",
   "ast": {
     "absolutePath": "/Users/rajanpaulsarella/Documents/workspace/practice/ETHDenver/Machu-Picchu/Pepito/contracts/PepitoDisguise.sol",
@@ -895,7 +895,7 @@
             "body": {
               "id": 416,
               "nodeType": "Block",
-              "src": "2008:407:2",
+              "src": "2008:408:2",
               "statements": [
                 {
                   "eventCall": {
@@ -911,7 +911,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 451,
-                            "src": "2243:4:2",
+                            "src": "2244:4:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_PepitoDisguise_$422",
                               "typeString": "contract PepitoDisguise"
@@ -931,7 +931,7 @@
                           "isPure": true,
                           "lValueRequested": false,
                           "nodeType": "ElementaryTypeNameExpression",
-                          "src": "2235:7:2",
+                          "src": "2236:7:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_address_$",
                             "typeString": "type(address)"
@@ -940,7 +940,7 @@
                             "id": 403,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
-                            "src": "2235:7:2",
+                            "src": "2236:7:2",
                             "typeDescriptions": {
                               "typeIdentifier": null,
                               "typeString": null
@@ -955,7 +955,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "2235:13:2",
+                        "src": "2236:13:2",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -969,7 +969,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 345,
-                        "src": "2250:15:2",
+                        "src": "2251:15:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint256_$12_storage",
                           "typeString": "uint256[12] storage ref"
@@ -992,7 +992,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 361,
-                      "src": "2222:12:2",
+                      "src": "2223:12:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_array$_t_uint256_$12_memory_ptr_$returns$__$",
                         "typeString": "function (address,uint256[12] memory)"
@@ -1006,7 +1006,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "2222:44:2",
+                    "src": "2223:44:2",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
@@ -1015,7 +1015,7 @@
                   },
                   "id": 409,
                   "nodeType": "EmitStatement",
-                  "src": "2217:49:2"
+                  "src": "2218:49:2"
                 },
                 {
                   "expression": {
@@ -1032,7 +1032,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 341,
-                      "src": "2276:12:2",
+                      "src": "2277:12:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1050,7 +1050,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "2292:1:2",
+                      "src": "2293:1:2",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1_by_1",
@@ -1058,7 +1058,7 @@
                       },
                       "value": "1"
                     },
-                    "src": "2276:17:2",
+                    "src": "2277:17:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1066,7 +1066,7 @@
                   },
                   "id": 413,
                   "nodeType": "ExpressionStatement",
-                  "src": "2276:17:2"
+                  "src": "2277:17:2"
                 },
                 {
                   "expression": {
@@ -1076,7 +1076,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 345,
-                    "src": "2393:15:2",
+                    "src": "2394:15:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint256_$12_storage",
                       "typeString": "uint256[12] storage ref"
@@ -1085,7 +1085,7 @@
                   "functionReturnParameters": 401,
                   "id": 415,
                   "nodeType": "Return",
-                  "src": "2386:22:2"
+                  "src": "2387:22:2"
                 }
               ]
             },
@@ -1166,7 +1166,7 @@
               "src": "1987:20:2"
             },
             "scope": 422,
-            "src": "1941:474:2",
+            "src": "1941:475:2",
             "stateMutability": "payable",
             "virtual": false,
             "visibility": "public"
@@ -1175,7 +1175,7 @@
             "body": {
               "id": 420,
               "nodeType": "Block",
-              "src": "2462:130:2",
+              "src": "2463:130:2",
               "statements": []
             },
             "documentation": null,
@@ -1191,26 +1191,26 @@
               "id": 418,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2444:2:2"
+              "src": "2445:2:2"
             },
             "returnParameters": {
               "id": 419,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2462:0:2"
+              "src": "2463:0:2"
             },
             "scope": 422,
-            "src": "2421:171:2",
+            "src": "2422:171:2",
             "stateMutability": "payable",
             "virtual": false,
             "visibility": "public"
           }
         ],
         "scope": 423,
-        "src": "930:2842:2"
+        "src": "930:2843:2"
       }
     ],
-    "src": "32:3741:2"
+    "src": "32:3742:2"
   },
   "legacyAST": {
     "attributes": {
@@ -2167,7 +2167,7 @@
                             },
                             "id": 402,
                             "name": "Identifier",
-                            "src": "2222:12:2"
+                            "src": "2223:12:2"
                           },
                           {
                             "attributes": {
@@ -2207,12 +2207,12 @@
                                     },
                                     "id": 403,
                                     "name": "ElementaryTypeName",
-                                    "src": "2235:7:2"
+                                    "src": "2236:7:2"
                                   }
                                 ],
                                 "id": 404,
                                 "name": "ElementaryTypeNameExpression",
-                                "src": "2235:7:2"
+                                "src": "2236:7:2"
                               },
                               {
                                 "attributes": {
@@ -2226,12 +2226,12 @@
                                 },
                                 "id": 405,
                                 "name": "Identifier",
-                                "src": "2243:4:2"
+                                "src": "2244:4:2"
                               }
                             ],
                             "id": 406,
                             "name": "FunctionCall",
-                            "src": "2235:13:2"
+                            "src": "2236:13:2"
                           },
                           {
                             "attributes": {
@@ -2245,17 +2245,17 @@
                             },
                             "id": 407,
                             "name": "Identifier",
-                            "src": "2250:15:2"
+                            "src": "2251:15:2"
                           }
                         ],
                         "id": 408,
                         "name": "FunctionCall",
-                        "src": "2222:44:2"
+                        "src": "2223:44:2"
                       }
                     ],
                     "id": 409,
                     "name": "EmitStatement",
-                    "src": "2217:49:2"
+                    "src": "2218:49:2"
                   },
                   {
                     "children": [
@@ -2282,7 +2282,7 @@
                             },
                             "id": 410,
                             "name": "Identifier",
-                            "src": "2276:12:2"
+                            "src": "2277:12:2"
                           },
                           {
                             "attributes": {
@@ -2299,17 +2299,17 @@
                             },
                             "id": 411,
                             "name": "Literal",
-                            "src": "2292:1:2"
+                            "src": "2293:1:2"
                           }
                         ],
                         "id": 412,
                         "name": "Assignment",
-                        "src": "2276:17:2"
+                        "src": "2277:17:2"
                       }
                     ],
                     "id": 413,
                     "name": "ExpressionStatement",
-                    "src": "2276:17:2"
+                    "src": "2277:17:2"
                   },
                   {
                     "attributes": {
@@ -2328,22 +2328,22 @@
                         },
                         "id": 414,
                         "name": "Identifier",
-                        "src": "2393:15:2"
+                        "src": "2394:15:2"
                       }
                     ],
                     "id": 415,
                     "name": "Return",
-                    "src": "2386:22:2"
+                    "src": "2387:22:2"
                   }
                 ],
                 "id": 416,
                 "name": "Block",
-                "src": "2008:407:2"
+                "src": "2008:408:2"
               }
             ],
             "id": 417,
             "name": "FunctionDefinition",
-            "src": "1941:474:2"
+            "src": "1941:475:2"
           },
           {
             "attributes": {
@@ -2372,7 +2372,7 @@
                 "children": [],
                 "id": 418,
                 "name": "ParameterList",
-                "src": "2444:2:2"
+                "src": "2445:2:2"
               },
               {
                 "attributes": {
@@ -2383,7 +2383,7 @@
                 "children": [],
                 "id": 419,
                 "name": "ParameterList",
-                "src": "2462:0:2"
+                "src": "2463:0:2"
               },
               {
                 "attributes": {
@@ -2394,22 +2394,22 @@
                 "children": [],
                 "id": 420,
                 "name": "Block",
-                "src": "2462:130:2"
+                "src": "2463:130:2"
               }
             ],
             "id": 421,
             "name": "FunctionDefinition",
-            "src": "2421:171:2"
+            "src": "2422:171:2"
           }
         ],
         "id": 422,
         "name": "ContractDefinition",
-        "src": "930:2842:2"
+        "src": "930:2843:2"
       }
     ],
     "id": 423,
     "name": "SourceUnit",
-    "src": "32:3741:2"
+    "src": "32:3742:2"
   },
   "compiler": {
     "name": "solc",
@@ -2459,7 +2459,52 @@
       },
       "links": {},
       "address": "0x261aDD63Add6723be976c3a9a6eF44910b503612",
-      "transactionHash": "0xd7e0d57752f699f75fd2d9c95d763cf80ceffbf7008843cf169bfef4908a4be2"
+      "transactionHash": "0xc7cf8b2cf9702b63ea597d486184654d6ea5a2adada2fcae8c586548432bbc5e"
+    },
+    "44787": {
+      "events": {
+        "0xe9ba7b1b0b27c6ab2b810a6374133382246908ff3a8732905a29993c7f2c95ab": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "disguiseAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256[12]",
+              "name": "disguise",
+              "type": "uint256[12]"
+            }
+          ],
+          "name": "DisguiseRead",
+          "type": "event"
+        },
+        "0x504b87d066706ec2b4783bbd17c499c1dee069b91237189ac5319b5b1abbd3d9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "disguiseAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256[12]",
+              "name": "disguise",
+              "type": "uint256[12]"
+            }
+          ],
+          "name": "DisguiseStored",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xb9D9639cecb44e602cE612D466e66075d9674903",
+      "transactionHash": "0x278009462638c0109c332ff20d9954b7c744812329a6fe1fb5b0fbd1080761db"
     },
     "1612625655386": {
       "events": {
@@ -2508,7 +2553,7 @@
     }
   },
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-02-06T15:42:37.354Z",
+  "updatedAt": "2021-02-07T06:25:54.634Z",
   "networkType": "ethereum",
   "devdoc": {
     "author": "Vu Tien Khang",

@@ -38,7 +38,7 @@ contract PepitoDisguise {
 
     function readDisguise() public payable returns(uint256[12] memory) {
         /// @dev    in the future, retrieves the global variable disguiseInStore from IPFS database
-        /// @dev    payable so that in the future, a peson can be paid to provide personal details
+        /// @dev    payable so that in the future, a person can be paid to provide personal details
         emit DisguiseRead(address(this), disguiseInStore);
         tokenBalance += 1;           // placeholder: everytime a disguise discloses its data, it will be paid
         return disguiseInStore;

@@ -17,9 +17,9 @@
  *
  */
 
-const HDWalletProvider = require("@truffle/hdwallet-provider");
-require('dotenv').config();
-
+// const HDWalletProvider = require("@truffle/hdwallet-provider");
+// require('dotenv').config();
+//
 const path = require("path");    // used to direct creation of ABI in another directory than default
 
 const Web3 = require('web3')
@@ -30,6 +30,9 @@ const getAccount = require('./getAccount').getAccount
 
 async function awaitWrapper(){
     let account = await getAccount()
+    console.log(account)
+    console.log(account.address)
+    console.log(account.privateKey)
     kit.addAccount(account.privateKey)
 }
 awaitWrapper()
@@ -70,16 +73,16 @@ module.exports = {
       provider: kit.connection.web3.currentProvider, // CeloProvider
       network_id: 44787                              // Alfajores network id
     },
-     "rinkeby-infura": {
-        provider: () => new HDWalletProvider(process.env.TEST_MNEMONIC, "https://rinkeby.infura.io/"+process.env.INFURA_KEY),
-        network_id: 4,       // Rinkeby's network ID
-        gas: 5500000,
-      },
-     "kovan-infura": {
-        provider: () => new HDWalletProvider(process.env.TEST_MNEMONIC, "https://kovan.infura.io/"+process.env.INFURA_KEY),
-        network_id: 42,       // Kovan's network ID
-        gas: 5500000,
-      },
+     // "rinkeby-infura": {
+     //    provider: () => new HDWalletProvider(process.env.TEST_MNEMONIC, "https://rinkeby.infura.io/"+process.env.INFURA_KEY),
+     //    network_id: 4,       // Rinkeby's network ID
+     //    gas: 5500000,
+     //  },
+     // "kovan-infura": {
+     //    provider: () => new HDWalletProvider(process.env.TEST_MNEMONIC, "https://kovan.infura.io/"+process.env.INFURA_KEY),
+     //    network_id: 42,       // Kovan's network ID
+     //    gas: 5500000,
+     //  },
        // Another network with more advanced options...
     // advanced: {
     // port: 8777,             // Custom port
