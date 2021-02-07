@@ -30,9 +30,9 @@ const getAccount = require('./getAccount').getAccount
 
 async function awaitWrapper(){
     let account = await getAccount()
-    console.log(account)
-    console.log(account.address)
-    console.log(account.privateKey)
+    // console.log(account)
+    // console.log(account.address)
+    // console.log(account.privateKey)
     kit.addAccount(account.privateKey)
 }
 awaitWrapper()
